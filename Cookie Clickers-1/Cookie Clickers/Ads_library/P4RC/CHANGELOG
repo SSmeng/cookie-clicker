@@ -1,0 +1,106 @@
+**.**.****: Encryption key was fixed
+**.**.****: In case no Internet connection, alert is shown when P4RC button being pressed
+**.**.****: Default server was changed to live
+09.04.2012: P4RCUtils start to use p4rc server to determine Internet connection state
+09.04.2012: Determining of connection state was reworked
+10.04.2012: Embedded browser orientations support was reworked (should be verified)
+10.04.2012: Embedded browser appearance for iPad was fixed
+10.04.2012: Required files were added to both ZS projects, and now they are buildable
+13.04.2012: Embedded browser cookies changes processing was optimized
+20.04.2012: Showing banner a few times in a roll issue was fixed
+24.04.2012: Double BaseConnect delegate notifications issue was fixed
+24.04.2012: iTunes links were fixed
+27.04.2012: "- (void)hideWelcomeBanner" and "- (void)hideInterstitialBanner" were added to the P4RC class
+27.04.2012: p4rcSessionId cookie is removed when P4RC cannot to get user info from server for available Internet connection
+27.04.2012: Embedded browser frame is adjusted to the current orientation
+01.05.2012: Embedded browser supports portrait orientation (iPad)
+03.05.2012: Reachability status was fixed
+04.05.2012: Internet connection status is determined using google.com
+06.05.2012: Banners layout were fixed
+06.05.2012: Initialization process was updated
+07.05.2012: "- (NSString *)imageNameForButtonStateNormal" and "- (NSString *)imageNameForButtonStateHighlighted" were added to the P4RC class
+10.05.2012: Main menu P4RC HD logo was added to the package
+10.05.2012: Methods for checkin points and checkin in batch were switched to version 2
+10.05.2012: Layout shifting was fixed
+10.05.2012: "- (NSString *)imageNameForButtonState:(UIControlState)controlState forDeviceType:(P4RCDeviceType)deviceType" was added
+11.05.2012: "- (void)initialize" was removed
+13.05.2012: Show main is disabled, when Internet connection is missed or wasn't detected yet
+14.05.2012: Reachability determines connection status without port
+14.05.2012: Show "no Internet connection" alert when and hide browser, if Internet was disappeared while embedded browser is opened
+16.05.2012: Reachability determination refactored: it contains from server and service connection status
+17.05.2012: Connection logic was updated
+18.05.2012: Timeout was added to reachability detection
+18.05.2012: Authorization via Facebook issue was fixed
+19.05.2012: Embedded browser appearance was fixed
+21.05.2012: Timeout was added to embedded browser
+22.05.2012: Api endpoint parameter was added to initialization method
+24.05.2012: Api endpoint parameter was totally removed from P4RC
+24.05.2012: Embedded browser handles connection errors in right way
+24.05.2012: Errors with -999 code are ignored by embedded browser
+25.05.2012: Double adding of web view on the browser issue was fixed
+25.05.2012: One more approach, that removes local cache was added
+25.05.2012: All Javascript alerts were disabled when embedded browser is about to be hidden
+26.05.2012: Splash screen basics were implemented
+26.05.2012: Splash screen functionality was totally removed from the SDK
+04.06.2012: Set p4rcSessionId cookie while initialization
+04.06.2012: "- (UIImage *)imageForButton" returns different pictures for iPhone and iPad
+11.06.2012: BaseConnect was updated. 408 error is sent for timeout case
+11.06.2012: Sign Up screen layout was fixed
+11.06.2012: Keyboard appearance was fixed
+12.06.2012: "No internet connection" alerts were added where needed
+12.06.2012: Splash screen autorotations were fixed
+13.06.2012: P4RC headers were added to all Splash screens
+13.06.2012: P4RC Facebook subclass was created
+13.06.2012: Splash screen was updated for iPad integration
+13.06.2012: Splash screen rotations were updated
+14.06.2012: Terms and Conditions screen was implemented
+14.06.2012: Empty field check was fixed
+14.06.2012: Facebook authorization uses dialog
+18.06.2012: Interstitial banner layout for non logged in state was updated
+21.06.2012: Cached p4rcSessionCookie are being updated only in case Internet is present
+03.07.2012: Sign In screen became scrollable
+03.07.2012: Succeeded alerts were removed from P4RC authorization process
+04.07.2012: Text fields transitions on the Splash screens were updated
+05.07.2012: Most of memory leaks were resolved
+05.07.2012: Text fields transitions on the Splash screens became animated
+06.07.2012: Two more memory leaks were fixed: in method for checking errors in response and in helper categories for conversion from NSDictionary to NSData
+06.07.2012: Area with text fields on the Splash screens became scrollable
+06.07.2012: Alert about succeeded P4RC authorization was removed
+09.07.2012: Splash screen's layout was updated with new checkbox image
+16.07.2012: Check for Internet was added before signing in via Facebook
+16.07.2012: Scroll frame on Reset password screen was fixed
+17.07.2012: P4RC uses cookie from cache, when application became active
+17.07.2012: User session are being restored after application did become active, in case if Internet connection appears while application was in background
+17.07.2012: User points are being sent to server, that were earned while Internet connection wasn't presented
+17.07.2012: P4RC authorization via Facebook process for no connection state was updated
+17.07.2012: "-(void)checkUserState" method was fixed
+17.07.2012: "-(void)checkUserState" method was fixed again
+19.07.2012: No Internet connection message is shown as reaction for "- (void)fbDidNotLogin:(BOOL)cancelled", cancelled = NO
+23.07.2012: Wait screen was added to Forget email screen in Splash
+23.07.2012: Scroll behavior on Splash screen was fixed
+23.07.2012: Last memory leak in "- (void)getCouponImageWithGameRefId:(NSString *)gameRefId forReceiver:(id<ReceiverProtocol>)theReceiver" method was resolved
+24.07.2012: Unity adapter was added
+27.07.2012: Cached cookie is being used each time, when user opens embedded browser
+27.07.2012: Sending cached points was added right before browser showing
+15.08.2012: Banners were removed from P4RC interface
+30.08.2012: P4RC button images for iPhone/iPod Touch were updated
+06.09.2012: Splash screen layout was updated: 1) Background image was added to iPad version. 2) Headers of splash screen were changed. 3) First splash layout screen was changed
+10.09.2012: Small layout changes
+11.09.2012: Small layout changes: fonts and colors on the Splash screen were changed
+13.09.2012: Terms of use comes from server
+13.09.2012: Blue background image was added to embedded browser
+18.09.2012: Blue background for iPhone 5 was added
+19.09.2012: Terms and conditions text size was adjusted
+19.09.2012: Autorotations issue for iOS 6 was fixed
+20.09.2012: Terms of Use comes from appropriate server
+21.09.2012: Banners were totally removed from SDK
+26.09.2012: Blue background layout was fixed
+26.09.2012: Close and check buttons (Splash screen) active areas were expanded
+04.10.2012: Background view color for splash changed.
+15.10.2012: Borders from background view for splash removed from bottom, left and right sides.
+09.12.2012: Added max points caching. Max points are queried from server once per 24 hour
+21.12.2012: Added check for max points with hardcoded value
+11.01.2012: Fix adding points to last level
+28.01.2012: Fixed compatibility issue with previous sdk version. (Converting points)
+13.02.2012: Unity iphone5 support.
+20.02.2012: Removed warnings.
